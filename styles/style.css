@@ -29,3 +29,82 @@
 
 /* jouw code */
 
+body{
+	background-color: #E0CEF2;
+}
+
+img{
+	width: 10%;
+}
+
+.top-bar{
+	background-color: #E8F29B;
+}
+
+header{
+	background-color: #F2F1EB;
+}
+
+ul{
+	display: flex;
+}
+
+li{
+	flex-grow: 1;
+	justify-content: center;
+}
+
+footer{
+	background-color: #F238B1;
+}
+
+section:nth-of-type(4){
+	background-color: #F2E9F1;
+}
+
+main > article img{
+	width: 100%;
+}
+
+section:first-of-type article img{
+	width: 70%;
+}
+
+section:nth-of-type(2) article img{
+	width: 20%;
+}
+
+h2, h1{
+	font-family: obviously-narrow-black;
+}
+
+p{
+	font-family: obviously-narrow;
+}
+
+
+/* shop pagina */
+
+.shop-pagina{
+	background-color: #F2F1EB;
+}
+
+.shop-catagorie{
+   background-color: #E0CEF2;
+}
+
+main section ul li{
+	text-decoration: none;
+	background-color: #F238B1;
+	margin: 1em;
+}
+
+@font-face {
+	font-family: "obviously-narrow-black";
+	src: url("https://cdn.shopify.com/s/files/1/0680/9832/6759/files/Obviously-NarrowBlack.woff?v=1719230879");
+}
+
+@font-face {
+	font-family: "obviously-narrow" ;
+	src: url("https://seepje.com/cdn/shop/t/20/assets/Obviously-Narrow.woff?v=153060207017436625301724421260");
+}

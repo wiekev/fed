@@ -57,6 +57,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Screen reader test:
+Het leest eerst de hele website voor en dat stop het bij de optie om een email te sturen onderin de pagina.
+
+Het leest wel goed de nav balk en zacht de het een samengevouwen knop is.
+
+Bij de product pagina gaat die onderaan de pagina als het alles heeft voorgelezen weer terug naar boven en alles opnieuw vertellen. 
+
+De afbeeldingen hebben niet allemaal een alt dus het zegt gewoon afbeeldingen en dat ze er niet mee kunnen werken.
 
 </details>
 
