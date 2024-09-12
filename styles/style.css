@@ -1,110 +1,276 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
 }
-
-
-
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
-body{
-	background-color: #E0CEF2;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-img{
-	width: 10%;
+body {
+  background-color: #e0cef2;
 }
 
-.top-bar{
-	background-color: #E8F29B;
+img {
+  width: 10%;
 }
 
-header{
-	background-color: #F2F1EB;
+body > ul{
+  background-color: #e8f29b;
+  padding: 1em;
+  display: flex;
+  overflow-x: scroll;
+  text-align: center;
 }
 
-ul{
-	display: flex;
-}
-
-li{
+body > ul >li{
+	font-family: Helvetica-Light;
+	list-style: disc;
+	color: #034001;
+	flex-basis: 100%;
 	flex-grow: 1;
-	justify-content: center;
 }
 
-footer{
-	background-color: #F238B1;
+header {
+  background-color: #f2f1eb;
 }
 
-section:nth-of-type(4){
-	background-color: #F2E9F1;
+ul {
+  display: flex;
+  list-style: none;
 }
 
-main > article img{
-	width: 100%;
+ul a {
+  text-decoration: none;
 }
 
-section:first-of-type article img{
-	width: 70%;
+li {
+  flex-grow: 1;
+  justify-content: center;
+  font-family: obviously-narrow-black;
+  font-size: 24px;
+  color: #520092;
 }
 
-section:nth-of-type(2) article img{
-	width: 20%;
+header ul img {
+  width: 100px;
 }
 
-h2, h1{
-	font-family: obviously-narrow-black;
+footer {
+  background-color: #f238b1;
 }
 
-p{
-	font-family: obviously-narrow;
+h3,
+h2,
+h1 {
+  font-family: obviously-narrow-black;
+  color: #520092;
+  margin-left: 20px;
+  margin-top: 1em;
+}
+
+h1{
+  font-size: 60px;
+  line-height: 1em;
+}
+
+h2{
+  font-size: 60px;
+  line-height: 1em;
+}
+
+p {
+  font-family: obviously-narrow;
+  font-size: 30px;
+  color: #520092;
+  margin-left: 20px;
+  margin-bottom: 1em;
 }
 
 
-/* shop pagina */
 
-.shop-pagina{
-	background-color: #F2F1EB;
+/* ************* */
+/*  home pagina  */
+/* ************* */
+
+
+
+main > article img {
+  width: 100%;
+  border-radius: 3em;
+  transform: rotate(-10deg)
 }
 
-.shop-catagorie{
-   background-color: #E0CEF2;
+main > article a{
+  color: #034001;
+  background-color: #e8f29b;
+  border-radius: 2em;
+  text-decoration: none;
+  font-family: obviously-narrow-black;
+  font-size: 20px;
+  padding: 1em;
+  margin-left: 1em;
 }
 
-main section ul li{
-	text-decoration: none;
-	background-color: #F238B1;
-	margin: 1em;
+
+
+section:first-of-type a{
+  color: #034001;
+  background-color: #e8f29b;
+  border-radius: 2em;
+  text-decoration: none;
+  font-family: obviously-narrow-black;
+  font-size: 20px;
+  padding: 1em;
+  margin-left: 1em;
+
+}
+
+section:first-of-type article img {
+  width: 70%;
+  border-radius: 3em;
+}
+
+section:nth-of-type(2) article img {
+  width: 20%;
+}
+
+section:nth-of-type(4) {
+  background-color: #f2e9f1;
+}
+
+
+
+/* **************** */
+/*   shop pagina    */
+/* **************** */
+
+
+
+.shop-pagina {
+  background-color: #f2f1eb;
+}
+
+.shop-catagorie {
+  background-color: #e0cef2;
+  display: flex;
+  overflow-x: scroll;
+}
+
+main section ul li {
+  text-decoration: none;
+  color: #e0cef2;
+  background-color: #520092;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.shop-pagina section:nth-of-type(2){
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.shop-pagina section:nth-of-type(2) article{
+  width: 10em;
+  margin: 1em;
+}
+
+.shop-pagina section:nth-of-type(2) article h3{
+  height: 5em;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.shop-pagina section:nth-of-type(2) article img{
+  width: 10em;
+  background-color: #e0cef2;
+  border-radius: 2em;
+}
+
+
+.shop-pagina section:nth-of-type(2) article:nth-of-type(10) h3{
+  height: 5em;
+  font-size: 30px;
+  color: #0052CD;
+}
+
+.shop-pagina section:nth-of-type(2) article img{
+  width: 10em;
+  background-color: #e0cef2;
+  border-radius: 2em;
+}
+
+
+.shop-pagina section:nth-of-type(3){
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.shop-pagina section:nth-of-type(3) article{
+  width: 10em;
+  margin: 1em;
+}
+
+.shop-pagina section:nth-of-type(3) article h3{
+  height: 5em;
+  font-size: 30px;
+}
+
+.shop-pagina section:nth-of-type(3) article img{
+  width: 10em;
+  background-color: #e0cef2;
+  border-radius: 2em;
+}
+
+div{
+  display: block;
+  background-color: #520092;
+  border-radius: 1em;
+  padding-left: 1em;
+  width: 8em;
+  color: #e0cef2;
+  font-family: obviously-narrow-black;
+  font-size: 20-x;
+}
+
+
+
+@font-face {
+  font-family: "obviously-narrow-black";
+  src: url("https://cdn.shopify.com/s/files/1/0680/9832/6759/files/Obviously-NarrowBlack.woff?v=1719230879");
 }
 
 @font-face {
-	font-family: "obviously-narrow-black";
-	src: url("https://cdn.shopify.com/s/files/1/0680/9832/6759/files/Obviously-NarrowBlack.woff?v=1719230879");
+  font-family: "obviously-narrow";
+  src: url("https://seepje.com/cdn/shop/t/20/assets/Obviously-Narrow.woff?v=153060207017436625301724421260");
 }
 
 @font-face {
-	font-family: "obviously-narrow" ;
-	src: url("https://seepje.com/cdn/shop/t/20/assets/Obviously-Narrow.woff?v=153060207017436625301724421260");
+  font-family: "Helvetica-Light";
+  src: url("https://seepje.com/cdn/shop/t/20/assets/Helvetica-Light.woff?v=178486114463115871831724421260");
 }

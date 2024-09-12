@@ -97,17 +97,21 @@ De afbeeldingen hebben niet allemaal een alt dus het zegt gewoon afbeeldingen en
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het gaat wel goed, ik moest wel weer even inkomen aan het beging. 
+  Ik ben nu bezig met het opstelen van de pagina's op telefoon formaat. Ik ben nog niet echt bezig met het responsive maken. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | wieke (ik)     | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | mijn top bar   | en dit             | en ik dit    | en dan ik dat    |
+  | wil ik laten   | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | sliden         | ...                | ...          | ...              |
 
+  ook wil ik weten hoe ik de knop in de foto krijg, 
+  maar hoe ik het ook responsive kan maken
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
