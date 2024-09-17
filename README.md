@@ -58,6 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   Screen reader test:
+  
 Het leest eerst de hele website voor en dat stop het bij de optie om een email te sturen onderin de pagina.
 
 Het leest wel goed de nav balk en zacht de het een samengevouwen knop is.
@@ -110,8 +111,8 @@ De afbeeldingen hebben niet allemaal een alt dus het zegt gewoon afbeeldingen en
   | wil ik laten   | dit als er tijd is | nog een punt | dit wil ik zeker |
   | sliden         | ...                | ...          | ...              |
 
-  ook wil ik weten hoe ik de knop in de foto krijg, 
-  maar hoe ik het ook responsive kan maken
+  Ook wil ik weten hoe ik de knop in de foto krijg, 
+  maar hoe ik het ook responsive kan maken.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

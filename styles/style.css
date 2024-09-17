@@ -40,6 +40,7 @@ img {
 
 body > ul{
   background-color: #e8f29b;
+  scroll-snap-type: x mandatory;
   padding: 1em;
   display: flex;
   overflow-x: scroll;
@@ -111,7 +112,6 @@ p {
 }
 
 
-
 /* ************* */
 /*  home pagina  */
 /* ************* */
@@ -136,6 +136,9 @@ main > article a{
 }
 
 
+section:first-of-type article{
+  position: relative;
+}
 
 section:first-of-type a{
   color: #034001;
@@ -144,18 +147,33 @@ section:first-of-type a{
   text-decoration: none;
   font-family: obviously-narrow-black;
   font-size: 20px;
-  padding: 1em;
-  margin-left: 1em;
-
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  
+  position: absolute;
+  bottom: 1.3em;
+  left: 2em;
 }
 
 section:first-of-type article img {
-  width: 70%;
+  width: 90%;
   border-radius: 3em;
+  margin-left: 2em;
 }
 
 section:nth-of-type(2) article img {
   width: 20%;
+}
+
+section:nth-of-type(2) a{
+  color: #e0cef2;
+  background-color: #520092;
+  border-radius: 2em;
+  text-decoration: none;
+  font-family: obviously-narrow-black;
+  font-size: 20px;
+  padding: 0.5em;
 }
 
 section:nth-of-type(4) {
@@ -178,6 +196,7 @@ section:nth-of-type(4) {
   background-color: #e0cef2;
   display: flex;
   overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 main section ul li {
