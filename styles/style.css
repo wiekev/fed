@@ -138,6 +138,44 @@ p {
 }
 
 
+
+/* ************* */
+/*  hambureger   */
+/* ************* */
+
+
+.toon-menu{
+  transform: translateX(0%);
+}
+
+nav{
+  background-color: #FFFEF6;
+  width: 40em;
+  height: 70em;
+  transform: translateX(-100%);
+  position: absolute;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.verdwijn{
+  display: none;
+  position: relative;
+  bottom: 0.5em;
+  height: 3em;
+}
+
+.weg{
+  display: block;
+  position: relative;
+  bottom: 0.5em;
+  height: 3em;
+}
+
+
+
+
+
 /* ************* */
 /*  home pagina  */
 /* ************* */
@@ -559,6 +597,13 @@ footer section article:first-of-type{
   flex-basis:30em;
 }
 
+.paars{
+  background-color: #520092;
+}
+
+.paars svg{
+  color: #520092;
+}
 
 
 
