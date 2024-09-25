@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -23,11 +32,14 @@
 /* JOUW STYLING */
 /****************/
 
+svg{
+  position: relative;
+  width: 35px;
+  color: #520092;
+}
 
-
-* {
-  margin: 0;
-  padding: 0;
+a svg{
+  color: #034001;
 }
 
 body {
@@ -67,11 +79,13 @@ body > ul >li{
 
 header {
   background-color: #FFFEF6;
+  z-index: 2;
 }
 
-ul {
+header ul {
   display: flex;
   list-style: none;
+  height: 5em;
 }
 
 ul a {
@@ -84,6 +98,7 @@ header li {
   font-family: obviously-narrow-black;
   font-size: 24px;
   color: #520092;
+  margin-top: .7em;
 }
 
 header ul img {
@@ -131,12 +146,24 @@ p {
 /*  home pagina  */
 /* ************* */
 
+.shop-catagorie ul{
+  display: flex;
+}
 
+.shop-catagorie ul a{
+  text-decoration: none;
+}
+
+main > article{
+  overflow: hidden;
+  padding-bottom: 1.5em;
+}
 
 main > article img {
   width: 100%;
-  border-radius: 3em;
-  transform: rotate(-10deg);
+  border-radius: 5em;
+  transform: rotate(-5deg) translateY(-250px) translateX(70px);
+  z-index: 1;
 }
 
 main > article a{
@@ -163,8 +190,8 @@ section:first-of-type a{
   font-family: obviously-narrow-black;
   font-size: 20px;
   padding: 0.5em;
-  padding-left: 6em;
-  padding-right: 6em;
+  text-align: center;
+  width: 80%;
   position: absolute;
   bottom: 1.3em;
   left: 1.6em;
@@ -222,11 +249,56 @@ section:nth-of-type(4) article{
   scroll-snap-align: center;
 }
 
-section:nth-of-type(4) img{
+section:nth-of-type(4) article img{
   width: 90%;
-  margin: 2em;
+  margin: 1em;
   border-radius: 2em;
 }
+
+
+
+/* footer */
+
+footer h2,footer h3, footer p, footer ul{
+color: #f2e9f1;
+}
+
+footer ul li{
+  font-family: Helvetica-Light;
+  margin: 1.5em;
+  list-style-type: none;
+}
+
+footer > ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+footer svg{
+  color: #f238b1;
+  width: 200px;
+  display: flex;
+}
+
+footer svg:first-of-type{
+  width: 200px;
+  fill: #f2e9f1;
+  margin: 3em;
+}
+
+footer section{
+  display: flex;
+}
+
+footer section article{
+  display: inline-block;
+}
+
+footer h3{
+  display: inline;
+}
+
 
 
 
@@ -255,7 +327,7 @@ section:nth-of-type(4) img{
 }
 
 .shop-catagorie ul li {
-  text-decoration: none;
+  list-style: none;
   color: #e0cef2;
   background-color: #520092;
   margin: 1em;
@@ -354,7 +426,7 @@ section article:nth-child(n+10) button{
   width: 8em;
   color: #FFFEF6;
   font-family: obviously-narrow-black;
-  font-size: 20x;
+  font-size: 20px;
   margin-left: 2em;
   margin-bottom: 1em;
 }
@@ -389,10 +461,58 @@ section article button{
   width: 8em;
   color: #e0cef2;
   font-family: obviously-narrow-black;
-  font-size: 20x;
+  font-size: 20px;
   margin-left: 2em;
   margin-bottom: 1em;
 }
+
+.ondernavigatie{
+  font-family: Helvetica-Light;
+  color: #520092;
+  text-align: end;
+  margin-right: 2em;
+}
+
+.ondernavigatie svg{
+  width: 1.5em;
+  height: 1.5em;
+  color: #FFFEF6;
+  vertical-align: middle;
+}
+
+.ondernavigatie li:nth-child(-n+3){
+  display: inline-block;
+  text-align: center;
+  margin: 0.8em;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border: solid #FFFEF6;
+  border-radius: 50%;
+}
+
+.ondernavigatie li:first-of-type{
+  border: solid 2px #520092;
+  border-radius: 50%;
+}
+
+.ondernavigatie li:last-of-type{
+  background-color: #520092;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0.8em;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+.ondernavigatie li:nth-child(-n+3):hover{
+  border: solid 2px #520092;
+  border-radius: 50%;
+}
+
+
 
 
 
