@@ -32,7 +32,7 @@ img {
 /* JOUW STYLING */
 /****************/
 
-svg{
+header svg{
   position: relative;
   width: 35px;
   color: #520092;
@@ -103,10 +103,6 @@ header li {
 
 header ul img {
   width: 100px;
-}
-
-footer {
-  background-color: #f238b1;
 }
 
 h3,
@@ -254,51 +250,6 @@ section:nth-of-type(4) article img{
   margin: 1em;
   border-radius: 2em;
 }
-
-
-
-/* footer */
-
-footer h2,footer h3, footer p, footer ul{
-color: #f2e9f1;
-}
-
-footer ul li{
-  font-family: Helvetica-Light;
-  margin: 1.5em;
-  list-style-type: none;
-}
-
-footer > ul{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2em;
-}
-
-footer svg{
-  color: #f238b1;
-  width: 200px;
-  display: flex;
-}
-
-footer svg:first-of-type{
-  width: 200px;
-  fill: #f2e9f1;
-  margin: 3em;
-}
-
-footer section{
-  display: flex;
-}
-
-footer section article{
-  display: inline-block;
-}
-
-footer h3{
-  display: inline;
-}
-
 
 
 
@@ -511,6 +462,105 @@ section article button{
   border: solid 2px #520092;
   border-radius: 50%;
 }
+
+
+
+
+/* ************ */
+/*    footer    */
+/* ************ */
+
+
+footer {
+  background-color: #f238b1;
+}
+
+footer h2,footer h3, footer p, footer ul{
+color: #f2e9f1;
+}
+
+footer h3{
+  display: inline;
+  margin-left: 1em;
+  font-size: 30px;
+
+}
+
+footer ul li{
+  font-family: Helvetica-Light;
+  margin: 1.5em;
+  list-style-type: none;
+}
+
+footer > ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+footer svg{
+  color: #f238b1;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+footer > svg{
+  width: 200px;
+  fill: #f2e9f1;
+  margin-left: 3em;
+}
+
+footer > p{
+  margin-top: -2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+footer li svg{
+  fill: #f2e9f1;
+  width: 70px;
+  display: inline;
+}
+
+footer section article:first-of-type ul{
+  display: flex;
+  color: #0052CD;
+}
+
+footer section article:first-of-type ul li{
+  height: 70px;
+  margin: 1em 0em 1em .5em;
+}
+
+footer section article:first-of-type ul:first-of-type li:first-of-type{
+  margin-left: 3em;
+}
+
+footer section li{
+  margin-left:3em;
+}
+
+footer section{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+footer section article{
+  flex-basis:20em;
+  flex-grow:1;
+  justify-content:center;
+  align-items:center;
+  gap:.125em;
+}
+
+footer section article:first-of-type{
+  flex-grow: 3;
+  flex-basis:30em;
+}
+
+
+
 
 
 
