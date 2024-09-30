@@ -1,5 +1,3 @@
-// JavaScript Document
-console.log("hi");
 
 let menuKnop = document.querySelector("header ul li:last-of-type svg:first-of-type");
 let sluitKnop = document.querySelector("header ul li:last-of-type svg:last-of-type");
@@ -31,7 +29,7 @@ window.addEventListener("scroll", () => {
     let huidigescroll = window.pageYOffset;
     
 
-    if ( huidigescroll > laatsteScroll) {
+    if ( huidigescroll > laatsteScroll && huidigescroll > 0) {
        header.style.transform = "translateY(-100%)";
     } else {
         header.style.transform = "translateY(0)";
@@ -39,3 +37,17 @@ window.addEventListener("scroll", () => {
 
     laatsteScroll = huidigescroll;
 });
+
+
+
+let scrollTopButton = document.querySelector("main > button")
+
+scrollTopButton.onclick = scrollTop
+
+function scrollTop(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    });
+
+}
