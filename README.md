@@ -185,7 +185,7 @@ De afbeeldingen hebben niet allemaal een alt dus het zegt gewoon afbeeldingen en
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 gaat wel goed moet wel nog veel responsiv maken maar voor de rest ben ik klaar.
-
+ 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
@@ -194,7 +194,9 @@ gaat wel goed moet wel nog veel responsiv maken maar voor de rest ben ik klaar.
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-moet ik ook alle interactie doen als ik responsive doe, zoals een formelier?
+Moet ik ook alle interactie doen als ik responsive doe, zoals een formelier?
+Moet ik ook een foto achter de foto platsen voor scaduw, of is dat te klein en is het niet erg als ik niet alles heb?
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

@@ -12,22 +12,6 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-
-
-:root {
-  /* startje */
-  --color-text: #111;
-  --color-background: #eee;
-}
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -47,10 +31,9 @@ img {
   width: 10%;
 }
 
-body > ul{
+body > article > ul{
   background-color: #e8f29b;
-  padding: 1em;
-  text-align: center;
+  height: 3em;
 
   display: flex;
   overflow-x: scroll;
@@ -60,16 +43,16 @@ body > ul{
   
 }
 
-body > ul::-webkit-scrollbar { 
+body > article > ul::-webkit-scrollbar { 
   display: block; 
 }
 
 
-body > ul >li{
+body > article > ul >li{
 	font-family: Helvetica-Light;
 	list-style: none;
 	color: #034001;
-	font-size: 24px;
+	font-size: 15px;
   min-width: 100%;
   scroll-snap-align: center;
   letter-spacing: 2px;
@@ -77,9 +60,11 @@ body > ul >li{
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  
 }
 
-body > ul > li::before{
+body > article > ul > li::before{
   content: "";
   background-color: #034001;
   width: 12px;
@@ -130,9 +115,18 @@ p {
 
 
 /* ************* */
-/*  hambureger   */
+/*   navigatie   */
 /* ************* */
 
+
+body > article{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
 
 
 header svg{
@@ -155,7 +149,7 @@ header ul img {
 
 header {
   background-color: #FFFEF6;
-  z-index: 2;
+  
 }
 
 header ul {
@@ -214,10 +208,60 @@ nav{
   background-color: #FFFEF6;
   width: 40em;
   height: 70em;
+  margin-top: 7.9em;
   transform: translateX(-100%);
   position: absolute;
   transition: 0.3s;
   z-index: 2;
+  position: fixed;
+}
+
+.shop-pagina nav{
+  margin-top: 0;
+}
+
+nav img{
+  border-radius: 1.5em;
+  width: 6.5em;
+  height: 5.3em;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+nav ul{
+  margin-left: 1em;
+  color: #520092;
+  list-style: none;
+}
+
+nav p{
+  font-family: obviously-narrow-black;
+  color: #520092;
+  display: inline;
+
+}
+
+nav ul:first-of-type li a{
+  font-family: obviously-narrow-black;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+
+nav ul:nth-of-type(2) li{
+  font-family: obviously-narrow;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+nav svg{
+  align-items: end;
+  margin-left: 1em;
+  color: #520092;
 }
 
 .verdwijn{
@@ -234,6 +278,9 @@ nav{
   height: 3em;
 }
 
+.noScroll{
+  overflow-y: hidden;
+}
 
 
 
@@ -241,8 +288,6 @@ nav{
 /* ************* */
 /*  home pagina  */
 /* ************* */
-
-
 
 .shop-catagorie ul{
   display: flex;
@@ -252,19 +297,21 @@ nav{
   text-decoration: none;
 }
 
-main > article{
+main section:first-of-type{
   overflow: hidden;
   padding-bottom: 1.5em;
 }
 
-main > article img {
+main section:first-of-type article img {
   width: 100%;
+  height: 28em;
+  object-fit: cover;
   border-radius: 5em;
-  transform: rotate(-5deg) translateY(-250px) translateX(70px);
+  transform: rotate(-7deg) translateY(7px) translateX(20px);
   z-index: 1;
 }
 
-main > article a{
+main section:first-of-type article a{
   color: #034001;
   background-color: #e8f29b;
   border-radius: 2em;
@@ -276,11 +323,11 @@ main > article a{
 }
 
 
-section:first-of-type article{
+section:nth-of-type(2) article{
   position: relative;
 }
 
-section:first-of-type a{
+section:nth-of-type(2) a{
   color: #034001;
   background-color: #e8f29b;
   border-radius: 2em;
@@ -295,17 +342,17 @@ section:first-of-type a{
   left: 1.6em;
 }
 
-section:first-of-type article img {
+section:nth-of-type(2) article img {
   width: 90%;
   border-radius: 3em;
   margin-left: 1.4em;
 }
 
-section:nth-of-type(2) article img {
+section:nth-of-type(3) article img {
   width: 20%;
 }
 
-section:nth-of-type(2) a{
+section:nth-of-type(3) a{
   color: #e0cef2;
   background-color: #520092;
   border-radius: 2em;
@@ -316,38 +363,38 @@ section:nth-of-type(2) a{
   margin-left: 4em;
 }
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
   background-color: #f2e9f1;
 }
 
-section:nth-of-type(3) img{
+section:nth-of-type(4) img{
   width: 80%;
   border-radius: 3em;
   margin-left: 2.5em;
   margin-top: 7em;
 }
 
-section:nth-of-type(3) h2{
+section:nth-of-type(4) h2{
   color: #f238b1;
   margin-right: 1em;
 }
 
-section:nth-of-type(4) {
+section:nth-of-type(5) {
   background-color: #f2e9f1;
 }
 
-section:nth-of-type(4) h2{
+section:nth-of-type(5) h2{
   color: #f238b1;
 }
 
-section:nth-of-type(4) article{
+section:nth-of-type(5) article{
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-snap-align: center;
 }
 
-section:nth-of-type(4) article img{
+section:nth-of-type(5) article img{
   width: 90%;
   margin: 1em;
   border-radius: 2em;
@@ -372,42 +419,77 @@ section:nth-of-type(4) article img{
 .shop-catagorie {
   background-color: #e0cef2;
   display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-top: 8em;
+}
+
+
+.shop-catagorie article:first-of-type{ 
   overflow-x: scroll;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scrollbar-width: none;
 }
 
-.shop-catagorie::-webkit-scrollbar{
-  display: none;
-}
-
-.shop-catagorie ul li {
+.shop-catagorie article:first-of-type ul li {
   list-style: none;
   color: #e0cef2;
-  background-color: #520092;
-  margin: 1em;
-  padding: 0.3em 1em 0.5em 1em;
-  border-radius: 1.5em;
-  text-align: center;
   font-family: obviously-narrow-black;
-  font-size: 24px;
+  font-size: 20px;
+  background-color: #520092;
+  border-radius: 1.5em;
+
+  margin: 0.2em;
+  padding: 0.3em 1em 0.5em 1em;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.shop-catagorie ul li:first-of-type{
+.shop-catagorie article:first-of-type ul{
+  margin-left: 1em;
+  text-align: center;
+  display: flex;
+  max-width: 100%;
+}
+
+.shop-catagorie section article:first-of-type ul li:first-of-type{
   background-color: #CB8BFF;
   color: #520092;
+  align-items: center;
 }
 
-.shop-catagorie ul :hover{
+.shop-catagorie article:first-of-type ul :hover{
   background-color: #CB8BFF;
   color: #520092;
   transition: all .3s;
 }
 
-.shop-catagorie div{
-  /* display: none; */
-  background-color: #cc8bff;
-  border-radius: 2em;
-  transform: rotate(5deg) translateY(-2px) translateX(70px);
-  z-index: 1;
+.shop-pagina article:nth-of-type(2) div{
+  display: none;
+}
+
+.shop-pagina article:nth-of-type(2) div p{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.shop-pagina article:nth-of-type(2) div p:first-of-type{
+  font-family: obviously-narrow-black;
+  padding-top: 6.5em;
+  text-align: center;
+  line-height: 20px;
+  font-size: 25px;
+}
+
+.shop-pagina article:nth-of-type(2) div p:last-of-type{
+  font-family: obviously-narrow;
 }
 
 
@@ -581,19 +663,40 @@ section article button{
 /* ************ */
 
 
+
 footer {
+  background-color: #f2e9f1;
+  border-top: none;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+footer:after {
+  content: "";
+  width: 130%;
+  height: 1000px;
+  position: absolute;
+  top: 100px;
+  left: -35px;
+  transform: rotate(4.2deg);
+  border-radius: 120px;
   background-color: #f238b1;
 }
 
-footer h2,footer h3, footer p, footer ul{
-color: #f2e9f1;
+.test{
+  z-index: 1;
+  position: relative;
+  padding: 5rem 4rem 0;
+}
+
+footer h2, footer h3, footer p, footer ul{
+  color: #f2e9f1;
 }
 
 footer h3{
-  display: inline;
   margin-left: 1em;
   font-size: 30px;
-
 }
 
 footer ul li{
@@ -602,7 +705,7 @@ footer ul li{
   list-style-type: none;
 }
 
-footer > ul{
+footer  section > ul{
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
@@ -615,16 +718,16 @@ footer svg{
   padding: 0;
 }
 
-footer > svg{
+footer section > svg{
   width: 200px;
   fill: #f2e9f1;
   margin-left: 3em;
 }
 
-footer > p{
-  margin-top: -2em;
-  margin-left: 2em;
-  margin-bottom: 2em;
+footer section > p{
+  position: absolute;
+  top: 8.5em;
+  left: 5em;
 }
 
 footer li svg{
@@ -684,15 +787,21 @@ footer section article:first-of-type{
 
 
 @media (min-width: 990px ) {
+  body > ul{
+    justify-content: center;
+  }
+
+
   body > ul >li{
-    min-width: 40%;
-    margin-left: 2em;
+    min-width: 18em;
+    margin: 0%;
   }
 
   header ul li:last-of-type{
     display: none;
   }
 }
+
 
 @media (max-width: 990px){
   header ul li:nth-of-type(2){
@@ -706,25 +815,35 @@ footer section article:first-of-type{
   }
 }
 
+
 @media (min-width: 750px){
-  .shop-catagorie ul{
+  .shop-catagorie  ul{
     display: flex;
     flex-wrap: wrap;
   }
 
-  .shop-catagorie ul li{
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-  }
-
-  .shop-catagorie{
-    height: 10em;
-  }
-
-  .shop-catagorie div{
+  .shop-pagina section article:nth-of-type(2) div{
     display: block;
+    background-color: #cc8bff;
+    border-radius: 2em;
+    transform: rotate(5deg) translateY(-20px);
+    height: 18em;
+    width: 18em;
+    position: relative;
+    right: -3em;
+    top: -7em;
+    align-items: flex-end;
   }
 }
+
+
+@media (max-width: 750px){
+  .shop-catagorie{
+    height: 9em;
+  }
+}
+
+
 
 
 
