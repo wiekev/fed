@@ -22,6 +22,7 @@ function sluitMenu(){
 }
 
 
+// (ChatGPT - Header Verbergen Bij Scrollen, z.d.)
 let laatsteScroll = 0;
 const header = document.querySelector("body > article")
 
@@ -40,6 +41,7 @@ window.addEventListener("scroll", () => {
 
 
 
+// (ChatGPT - Scroll Naar Boven Functie, z.d.)
 let scrollTopButton = document.querySelector("main > button")
 
 scrollTopButton.onclick = scrollTop

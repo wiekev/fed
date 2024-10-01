@@ -370,7 +370,13 @@ section:nth-of-type(3) article img {
   width: 20%;
 }
 
-main > a{
+main > article{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+main > article > a{
   color: #e0cef2;
   background-color: #520092;
   border-radius: 2em;
@@ -378,7 +384,9 @@ main > a{
   font-family: obviously-narrow-black;
   font-size: 20px;
   padding: 0.5em;
-  margin-left: 4em;
+  width: 13em;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 section:nth-of-type(4) {
@@ -756,6 +764,7 @@ footer {
   min-height: 400px;
 }
 
+/* (CSS - Before Pseudo Element Behind Element Text, z.d.) */
 footer:after {
   content: "";
   width: 130%;
